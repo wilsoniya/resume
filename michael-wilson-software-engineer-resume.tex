@@ -1,0 +1,136 @@
+% LaTeX resume using res.cls
+
+% resume class adapted from: https://www.rpi.edu/dept/arc/training/latex/resumes/
+
+\documentclass[line,margin]{res}
+\begin{document}
+
+\name{Michael Wilson}
+\address{wilsoniya@gmail.com}
+\address{(312) 404--0425}
+
+\begin{resume}
+
+%% \section{OBJECTIVE}
+%% To boldly go where no one has gone before.
+
+
+\section{EXPERIENCE}
+    \textbf{Narrative Science} \hfill Chicago, IL \\
+    \textit{Senior Software Engineer, DevOps Team Lead}
+    \hfill December 2015 --- Present
+        \begin{itemize}  \itemsep -2pt
+            \item Reduced infrastructure complexity and risk by standardizing
+                around a single OS distribution and fully specifying all host
+                configurations using \textit{Ansible}, resulting in a uniform
+                and fully-reproducible infrastructure
+            \item Designed and directed implementation of on-premise packaging
+                of \textit{Quill 2} SaaS platform, enabling sales of existing
+                software to many new customers
+            \item Designed the build, release, and deployment processes for
+                \textit{Quill 3} to support fast, zero-downtime deploys,
+                continuous integration, simple hot-patching, and uniform
+                tooling for both SaaS and on-premise installations
+            \item As a leader, cultivated and disseminated engineering
+                standards and best-practices to improve the quality and value
+                of  software produced by the organization
+        \end{itemize}
+     \textit{Data Engineer} \hfill December 2013 --- December 2015
+        \begin{itemize} \itemsep -2pt
+            \item Designed, implemented, and deployed     analysis pipelines to
+                transform client data into payloads usable by \textit{Quill}
+                natural language generation suite using \textit{Python},
+                \textit{Pandas}, and \textit{Apache Hadoop}
+            \item Lead development of in-house documentation toolkit during
+                company hackathon resulting in first place award; this toolkit
+                was later deployed organization-wide, enabling major process
+                improvement
+            \item Created a heavily documented object-oriented framework for
+                composing data pipeline applications, resulting in vast
+                productivity enhancements across the engineering organization
+        \end{itemize}
+
+    \textbf{Esqyr} \hfill St. Louis Park, MN {\small (Remote)} \\
+    \textit{Cofounder, Software Engineer} \hfill May 2014 --- Present
+        \begin{itemize}  \itemsep -2pt
+            \item As a product developer, designed a software solution for
+                administering the sale and delivery of Bar Exam preparatory
+                materials to law students
+            \item Implemented a mobile-responsive e-commerce web application
+                with an \textit{AngularJS} front-end, backed by a
+                \textit{Python} \textit{RESTful} API with a \textit{PostgreSQL}
+                normalized relational data store, deployed with
+                \textit{Ansible}.
+            \item Implemented a comprehensive test suite providing
+                \textgreater91\% statement/branch coverage comprising
+                \textgreater50\% project SLOC.
+            \item (consider adding a bullet about how product development and
+                implementation occurred in setting w/ two non-technical,
+                non-software type people, with emphasis on exploiting good
+                communication skills)
+        \end{itemize}
+
+    \textbf{The CareGiver Partnership} \hfill Neenah, WI {\small (Remote)} \\
+    \textit{Software Engineer} \hfill October 2009 --- December 2013
+        \begin{itemize}  \itemsep -2pt
+            \item Facilitated full-scale reimplementation of web application
+                platform software from \textit{VB.NET} to
+                \textit{Python/Django}.
+            \item Realized tens of thousands of dollars in yearly savings by
+                virtualizing server operations using commodity \textit{Linux}
+                VPS hosting.
+            \item Implemented and supported a unified E-commerce, CRM, batch
+                distribution/fulfillment, and reporting software platform
+            \item Conceptualized and created a domain-specific guided search
+                tool using \textit{AngularJS}‒--\textit{The Incontinence
+                Product Finder}--‒enabling customers to more easily find and
+                purchase product
+        \end{itemize}
+
+    \textbf{SeatSync} \hfill Chicago, IL \\
+    \textit{Cofounder, Lead Software Engineer}
+        \hfill January 2012 --- November 2013
+        \begin{itemize}  \itemsep -2pt
+            \item Designed a P2P, location-aware ticket exchange platform
+                including real-time chat
+            \item Created a suite of unit tests providing coverage of
+                data-model and HTTP APIs
+            \item Implemented and extensively documented an HTTP API in
+                \textit{Python}
+            \item Designed and implemented \textit{Android} client software;
+                supported development of \textit{iOS} client software
+            \item Created platform analytics package making use of
+                \textit{scikit-learn} and \textit{matplotlib}
+        \end{itemize}
+
+
+\section{EDUCATION}
+    \textbf{University of Wisconsin, Madison}  \hfill Madison, WI \\
+    \textit{Bachelor of Science,} Computer Science  \hfill May 2009
+        \begin{itemize} \itemsep -2pt
+            \item Notable courses include Computer Graphics, Operating Systems,
+                Bioinformatics, and Linear Algebra
+            \item Worked at \textit{Internet Scout Research Group} as a
+                software developer; created custom CMS software for
+                \textit{UWAMIC} consortium using \textit{PHP}
+        \end{itemize}
+
+
+\section{PROFESSIONAL INTERESTS}
+    \begin{itemize} \itemsep -2pt
+        \item Created an audio spectrum visualizer using \textit{Rust};
+            implemented the \textit{Cooley-Tukey} FFT algorithm,
+            \textit{Hamming} window function, and a \textit{pulseaudio} foreign
+            function interface
+        \item Implemented a Quadtree-based spatial image storage mechanism
+            allowing logarithmic-time storage and retrieval of application data
+            on key-value stores
+        \item Earned a statement of accomplishment from \textit{Coursera} for
+            Cryptography I taught by Dan Boneh
+        \item Earned a statement of accomplishment from \textit{Coursera} for
+            Machine Learning taught by Andrew Ng
+    \end{itemize}
+
+
+\end{resume}
+\end{document}
