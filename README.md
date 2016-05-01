@@ -1,5 +1,4 @@
-# Michael Wilson
-## Software Engineer
+# Michael Wilson, Software Engineer
 
 This repository contains the LaTeX source of my resume.
 
