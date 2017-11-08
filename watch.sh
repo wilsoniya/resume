@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Utility script to invoke makefile any time a TeX source changes.
+# Utility script to invoke makefile any time a TeX sources change.
 
 TEX_FILE=michael-wilson-software-engineer-resume.tex
 
