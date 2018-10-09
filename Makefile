@@ -1,4 +1,4 @@
-.PHONY: clean
+.PHONY: clean watch
 
 all: michael-wilson-software-engineer-resume.pdf michael-wilson-software-engineer-cover-letter-template.pdf
 
@@ -7,6 +7,9 @@ michael-wilson-software-engineer-resume.pdf: michael-wilson-software-engineer-re
 
 michael-wilson-software-engineer-cover-letter-template.pdf: michael-wilson-software-engineer-cover-letter-template.tex
 	pdflatex $^
+
+watch:
+	./watch.sh
 
 clean:
 	rm -f *.pdf *.log *.aux
