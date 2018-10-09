@@ -1,12 +1,13 @@
 .PHONY: clean watch
 
-all: michael-wilson-software-engineer-resume.pdf michael-wilson-software-engineer-cover-letter-template.pdf
+TEX=$(shell find . -name '*.tex')
+DEPS=$(shell find . -name '*.cls')
+PDF=$(patsubst %.tex,%.pdf,${TEX})
 
-michael-wilson-software-engineer-resume.pdf: michael-wilson-software-engineer-resume.tex res.cls
+all: ${PDF}
+
+%.pdf: %.tex ${DEPS}
 	pdflatex $<
-
-michael-wilson-software-engineer-cover-letter-template.pdf: michael-wilson-software-engineer-cover-letter-template.tex
-	pdflatex $^
 
 watch:
 	./watch.sh

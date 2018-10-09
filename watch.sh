@@ -2,8 +2,6 @@
 
 # Utility script to invoke makefile any time a TeX sources change.
 
-TEX_FILE=michael-wilson-software-engineer-resume.tex
-
 function compile() {
     make
 }
@@ -12,7 +10,7 @@ compile
 
 while true; do
     printf "### WAITING FOR CHANGES... ###\n"
-    inotifywait -e close_write "${TEX_FILE}" *.cls &> /dev/null
+    inotifywait -e close_write *.tex *.cls &> /dev/null
     printf "\n\n### CHANGE DETECTED; RECOMPILING ###\n"
     compile
 done
